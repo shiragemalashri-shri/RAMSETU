@@ -54,7 +54,7 @@ export default function App() {
   useEffect(() => {
     const loadCase = async () => {
       try {
-        const result = await fetch("http://127.0.0.1:8000/api/case");
+        const result = await fetch("https://ramsetu.onrender.com/api/case");
 
         if (!result.ok) {
           throw new Error("Failed to load case");
@@ -92,7 +92,7 @@ export default function App() {
 
     try {
       const result = await fetch(
-        "http://127.0.0.1:8000/api/case/respond",
+        "https://ramsetu.onrender.com/api/case/respond",
         {
           method: "POST",
           headers: {
@@ -129,7 +129,7 @@ export default function App() {
 
     try {
       const result = await fetch(
-        "http://127.0.0.1:8000/api/case/decision",
+        "https://ramsetu.onrender.com/api/case/decision",
         {
           method: "POST",
           headers: {
